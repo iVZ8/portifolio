@@ -1,11 +1,10 @@
+package filesportifolio;
+
 import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-        // Classe Main.
-        // Responsável por chamar os arquivos do futuro portifolio.
-        // Por enquanto, nada aqui.
-        // Meta é fazer um projeto por semana.
+        // Classe Main, responsável por chamar os arquivos do futuro portifolio(meta é fazer um projeto por semana).
         boolean app = true;
         int op;
         Scanner scan = new Scanner(System.in);
@@ -15,7 +14,7 @@ public class Main{
             op = scan.nextInt();
             switch (op) {
                 case 1:
-                    System.out.print("Não implementado.");
+                    Calculator.main();
                     break;
                 case 2:
                     System.out.print("Não implementado.");
