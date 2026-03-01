@@ -17,13 +17,13 @@ public class Main{
                     Calculator.main();
                     break;
                 case 2:
-                    System.out.print("Não implementado.");
+                    TicTacToe.main();
                     break;
                 case 3:
-                    System.out.print("Não implementado.");
+                    System.out.print("Crud ainda não implementado.");
                     break;
                 case 4:
-                    System.out.print("Não implementado.");
+                    System.out.print("Crud de Crud não implementado.");
                     break;
                 case 5:
                     app = false;
