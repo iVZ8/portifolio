@@ -7,11 +7,10 @@ public class Main{
         // Classe Main, responsável por chamar os arquivos do futuro portifolio(meta é fazer um projeto por semana).
         boolean app = true;
         int op;
-        Scanner scan = new Scanner(System.in);
 
         do{
-            System.out.print("Menu\n\nSelecione uma opção\n\n1. Calculadora simples\n2. Jogo da velha\n3. Crud\n4. Crud de Cruds\n5. Sair\n\n> ");
-            op = scan.nextInt();
+            System.out.print("Menu\n\nSelecione uma opção\n\n1. Calculadora simples\n2. Jogo da velha\n3. Cifra de Cesar\n4. Crud\n5. Crud de Cruds\n6. Sair\n\n> ");
+            op = getnumber();
             switch (op) {
                 case 1:
                     Calculator.main();
@@ -20,15 +19,26 @@ public class Main{
                     TicTacToe.main();
                     break;
                 case 3:
-                    System.out.print("Crud ainda não implementado.");
+                    CesarCypher.main();
                     break;
                 case 4:
-                    System.out.print("Crud de Crud não implementado.");
+                    System.out.println("Crud ainda não implementado.");
                     break;
                 case 5:
+                    System.out.println("Crud de Crud não implementado.");
+                    break;
+                case 6:
                     app = false;
+                    break;
+                default:
+                    System.out.println("Sistema não encontrado.");
                     break;
             }
         }while (app);
+    }
+    public static int getnumber() {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        return num;
     }
 }
