@@ -37,10 +37,10 @@ public class Ordenacao {
                         m = criarMatriz();
                     }
                     System.out.print("Ordem crescente: ");
-                    //ordenarMatriz(v, true);
+                    ordenarMatriz(m, true);
                     System.out.println();
                     System.out.print("Ordem Decrescente: ");
-                    //ordenarMatriz(v, false);
+                    ordenarMatriz(m, false);
                     System.out.println();
                     break;
                 case 5:
@@ -61,7 +61,7 @@ public class Ordenacao {
     }
     public static int[][] criarMatriz(){
         int linhas = Leitura.lerInteiro("Informe a quantidade de linhas para essa matriz: ");
-        int colunas = Leitura.lerInteiro("Informe a quantidade de linhas para essa matriz: ");
+        int colunas = Leitura.lerInteiro("Informe a quantidade de colunas para essa matriz: ");
         int[][] matriz = new int[linhas][colunas];
 
         // preenchendo valores da matriz
@@ -104,6 +104,53 @@ public class Ordenacao {
         }
     }
     public static void ordenarMatriz(int[][] numeros, boolean crescente){
-        System.out.println("Não implementado.");
+        int linhas = numeros.length;
+        int colunas = numeros[0].length;
+
+        int total = linhas * colunas;
+
+        if(crescente){
+            for (int i = 0; i < total - 1; i++) {
+
+                for (int j = 0; j < total - 1 - i; j++) {
+
+                    int linha1 = j / colunas;
+                    int coluna1 = j % colunas;
+                    int linha2 = (j + 1) / colunas;
+                    int coluna2 = (j + 1) % colunas;
+
+                    if (numeros[linha1][coluna1] > numeros[linha2][coluna2]) {
+                        int temp = numeros[linha1][coluna1];
+                        numeros[linha1][coluna1] = numeros[linha2][coluna2];
+                        numeros[linha2][coluna2] = temp;
+                    }
+                }
+            }
+        }else{
+            for (int i = 0; i < total - 1; i++) {
+
+                for (int j = 0; j < total - 1 - i; j++) {
+
+                    int linha1 = j / colunas;
+                    int coluna1 = j % colunas;
+                    int linha2 = (j + 1) / colunas;
+                    int coluna2 = (j + 1) % colunas;
+
+                    if (numeros[linha1][coluna1] < numeros[linha2][coluna2]) {
+                        int temp = numeros[linha1][coluna1];
+                        numeros[linha1][coluna1] = numeros[linha2][coluna2];
+                        numeros[linha2][coluna2] = temp;
+                    }
+                }
+            }
+        }
+        // imprimindo resultado
+        System.out.println("Resultado matriz: ");
+        for(int i=0; i<numeros.length; i++){
+            for(int j=0; j<numeros[0].length; j++){
+                System.out.print(numeros[i][j]+" ");
+            }
+            System.out.println();
+        }
     }
 }
