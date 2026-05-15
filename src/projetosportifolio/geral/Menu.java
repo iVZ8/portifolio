@@ -3,6 +3,7 @@ package projetosportifolio.geral;
 import projetosportifolio.criptografia.CifraCesar;
 import projetosportifolio.jogos.JogoDaVelha;
 import projetosportifolio.util.Calculadora;
+import projetosportifolio.util.Ordenacao;
 
 public class Menu{
     public static void main(String[] args){
@@ -11,7 +12,7 @@ public class Menu{
         int op;
 
         do{
-            op = Leitura.lerInteiro("Menu\n\nSelecione uma opção\n\n1. Calculadora simples\n2. Jogo da velha\n3. Cifra de Cesar\n4. Crud\n5. Crud de Cruds\n6. Sair\n\n> ");
+            op = Leitura.lerInteiro("Menu\n\nSelecione uma opção\n\n1. Calculadora simples\n2. Jogo da velha\n3. Cifra de Cesar\n4. Algoritmo de ordenação\n5. Crud\n6. Crud de Cruds\n7. Sair\n\n> ");
             switch (op) {
                 case 1:
                     Calculadora.main();
@@ -23,12 +24,15 @@ public class Menu{
                     CifraCesar.main();
                     break;
                 case 4:
-                    System.out.println("Crud ainda não implementado.");
+                    Ordenacao.main();
                     break;
                 case 5:
-                    System.out.println("Crud de Crud não implementado.");
+                    System.out.println("Crud ainda não implementado.");
                     break;
                 case 6:
+                    System.out.println("Crud de Crud não implementado.");
+                    break;
+                case 7:
                     app = false;
                     break;
                 default:
