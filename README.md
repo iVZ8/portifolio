@@ -1,5 +1,5 @@
 # Portifólio
--# Feito por Gabriel Ribeiro de Moraes (VZ8)
+Feito por Gabriel Ribeiro de Moraes (VZ8)
 
 O projeto portifólio contém pequenos projetos que foram sendo criados ao longo da minha jornada como programador, seja na faculdade para fins acadêmicos ou mesmo para entreterimento.
 
@@ -16,6 +16,8 @@ O projeto portifólio contém pequenos projetos que foram sendo criados ao longo
 
 ### Conteúdo planejado para chegar:
 
+- Hannoi (Pode ser melhorado);
+- Jogo da Forca (Precisa finalizar);
 - Adição de CRUD financeiro;
 - Implementação do sistema financeiro com o de pessoas.
 
