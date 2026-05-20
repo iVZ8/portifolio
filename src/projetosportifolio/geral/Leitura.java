@@ -21,11 +21,13 @@ public class Leitura {
     }
     public static String lerString(String contexto) {
         Scanner scan = new Scanner(System.in);
+        System.out.print(contexto);
         String txt = scan.nextLine();
         return txt;
     }
     public static char lerChar(String contexto){
         Scanner scan = new Scanner(System.in);
+        System.out.print(contexto);
         char txt = scan.nextLine().charAt(0);
         return (txt);
     }

@@ -1,6 +1,7 @@
 package projetosportifolio.geral;
 
 import projetosportifolio.criptografia.CifraCesar;
+import projetosportifolio.crudPessoa.PessoaMain;
 import projetosportifolio.jogos.JogoDaVelha;
 import projetosportifolio.util.Calculadora;
 import projetosportifolio.util.Ordenacao;
@@ -12,7 +13,7 @@ public class Menu{
         int op;
 
         do{
-            op = Leitura.lerInteiro("Menu\n\nSelecione uma opção\n\n1. Calculadora simples\n2. Jogo da velha\n3. Cifra de Cesar\n4. Algoritmo de ordenação\n5. Crud\n6. Crud de Cruds\n7. Sair\n\n> ");
+            op = Leitura.lerInteiro("Menu\n\nSelecione uma opção\n\n1. Calculadora simples\n2. Jogo da velha\n3. Cifra de Cesar\n4. Algoritmo de ordenação\n5. Crud de Pessoas\n6. Sair\n\n> ");
             switch (op) {
                 case 1:
                     Calculadora.main();
@@ -27,12 +28,9 @@ public class Menu{
                     Ordenacao.main();
                     break;
                 case 5:
-                    System.out.println("Crud ainda não implementado.");
+                    PessoaMain.main();
                     break;
                 case 6:
-                    System.out.println("Crud de Crud não implementado.");
-                    break;
-                case 7:
                     app = false;
                     break;
                 default:

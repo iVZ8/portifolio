@@ -10,13 +10,14 @@ O projeto portifólio contém pequenos projetos que foram sendo criados ao longo
 - Calculadora (operações básicas);
 - Cifra de Cesar (embaralhar textos);
 - Hannoi (jogo de mover discos);
-- Jogo da Velha (jogo de obter uma linha ou coluna ou diagonal completa).
+- Jogo da Velha (jogo de obter uma linha ou coluna ou diagonal completa);
+- Jogo da Forca (Aviso: Tá incompleto);
+- CRUD de Pessoas.
 
 ### Conteúdo planejado para chegar:
 
-- Crud;
-- Crud de cruds (funciona como um mini erp);
-- Algoritmo de ordenar números (para vetores e matrizes em ordem crescente ou decrescente);
+- Adição de CRUD financeiro;
+- Implementação do sistema financeiro com o de pessoas.
 
 ### Obrigado por acompanhar esse projeto comigo!
 
